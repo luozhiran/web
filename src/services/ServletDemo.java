@@ -9,7 +9,11 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.io.PrintStream;
 import java.io.PrintWriter;
+import java.nio.charset.StandardCharsets;
 
+/**
+ * Tomcat下面总是会把GET/POST过来的reqest.parameters以ISO8859-1来解码
+ */
 public class ServletDemo extends HttpServlet {
 
     private String message;
@@ -21,10 +25,17 @@ public class ServletDemo extends HttpServlet {
     }
 
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-
+        message = "Hello POST";
+        HeadUtils.printRequestHeaders(request);
+        HeadUtils.printRequestParams(request);
+        PrintWriter printWriter = response.getWriter();
+        printWriter.write(message);
+        printWriter.flush();
+        printWriter.close();
     }
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+        message = "Hello GET";
         HeadUtils.printRequestHeaders(request);
         HeadUtils.printRequestParams(request);
         PrintWriter printWriter = response.getWriter();

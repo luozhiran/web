@@ -16,7 +16,7 @@
 <div class="div1">
     <h1>注册你的账户</h1>
 </div>
-<form action="../hello" method="get">
+<form action="../hello" method="post">
 
     <div>
         <span>账号：</span><input type="text" name="account"/>

@@ -3,6 +3,9 @@ package services.utils;
 import com.sun.deploy.net.HttpRequest;
 
 import javax.servlet.http.HttpServletRequest;
+import java.io.UnsupportedEncodingException;
+import java.net.URLEncoder;
+import java.nio.charset.StandardCharsets;
 import java.util.Enumeration;
 
 public class HeadUtils {
@@ -25,7 +28,6 @@ public class HeadUtils {
             headerKey = headers.nextElement();
             System.out.println("|  " + headerKey + ": " + request.getHeader(headerKey));
         }
-
         System.out.println("|_____________________________________________________________");
 
     }
@@ -39,6 +41,7 @@ public class HeadUtils {
 
         System.out.println("|  取得表单数据:");
         String headerKey = "";
+
         while (headers.hasMoreElements()) {
             headerKey = headers.nextElement();
             System.out.println("|  " + headerKey + ": " + request.getParameter(headerKey));
