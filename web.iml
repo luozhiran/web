@@ -32,5 +32,6 @@
       </library>
     </orderEntry>
     <orderEntry type="library" name="servlet-api" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Tomcat 9.0.35" level="application_server_libraries" />
   </component>
 </module>

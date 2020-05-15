@@ -1,5 +1,7 @@
 package services;
 
+import services.utils.HeadUtils;
+
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
@@ -23,8 +25,7 @@ public class ServletDemo extends HttpServlet {
     }
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-
-//        response.setContentType("text/Html");
+        HeadUtils.printRequestHeaders(request);
         PrintWriter printWriter = response.getWriter();
         printWriter.write(message);
         printWriter.flush();
