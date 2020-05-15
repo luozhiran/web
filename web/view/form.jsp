@@ -9,11 +9,31 @@
 <html>
 <head>
     <title>个人信息收集</title>
+    <link href="../css/form.css" rel="stylesheet" type="text/css">
 </head>
 <body>
 
-<form action="/hello" method="get">
+<div class="div1">
+    <h1>注册你的账户</h1>
+</div>
+<form action="../hello" method="get">
 
+    <div>
+        <span>账号：</span><input type="text" name="account"/>
+    </div>
+
+    <div>
+        <span>密码：</span><input type="password" name="pwd"><br/>
+    </div>
+
+    <div>
+        <span>确定密码：</span><input type="password" name="confirmPwd"><br/>
+    </div>
+
+    <div class="div2">
+        <input type="submit" name="提交">
+
+    </div>
 
 </form>
 </body>

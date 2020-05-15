@@ -26,6 +26,7 @@ public class ServletDemo extends HttpServlet {
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         HeadUtils.printRequestHeaders(request);
+        HeadUtils.printRequestParams(request);
         PrintWriter printWriter = response.getWriter();
         printWriter.write(message);
         printWriter.flush();

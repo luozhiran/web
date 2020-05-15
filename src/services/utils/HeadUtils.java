@@ -23,7 +23,25 @@ public class HeadUtils {
         String headerKey = "";
         while (headers.hasMoreElements()) {
             headerKey = headers.nextElement();
-            System.out.println("|  "+headerKey + ": " + request.getHeader(headerKey));
+            System.out.println("|  " + headerKey + ": " + request.getHeader(headerKey));
+        }
+
+        System.out.println("|_____________________________________________________________");
+
+    }
+
+
+    public static void printRequestParams(HttpServletRequest request) {
+
+        Enumeration<String> headers = request.getParameterNames();
+
+        System.out.println("\n\n|~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
+
+        System.out.println("|  取得表单数据:");
+        String headerKey = "";
+        while (headers.hasMoreElements()) {
+            headerKey = headers.nextElement();
+            System.out.println("|  " + headerKey + ": " + request.getParameter(headerKey));
         }
 
         System.out.println("|_____________________________________________________________");
