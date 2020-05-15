@@ -30,6 +30,10 @@
         <span>确定密码：</span><input type="password" name="confirmPwd"><br/>
     </div>
 
+    <div>
+        <span>本站协议：</span><input type="checkbox" name="rule"><br/>
+    </div>
+
     <div class="div2">
         <input type="submit" name="提交">
 

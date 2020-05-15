@@ -3,6 +3,7 @@ package services;
 import services.utils.HeadUtils;
 
 import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
@@ -14,6 +15,7 @@ import java.nio.charset.StandardCharsets;
 /**
  * Tomcat下面总是会把GET/POST过来的reqest.parameters以ISO8859-1来解码
  */
+//@WebServlet("/") 保留web.xml中的配置
 public class ServletDemo extends HttpServlet {
 
     private String message;
