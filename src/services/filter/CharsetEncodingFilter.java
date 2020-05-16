@@ -1,6 +1,8 @@
 package services.filter;
 
 
+import services.utils.WebManager;
+
 import javax.servlet.*;
 import java.io.IOException;
 
