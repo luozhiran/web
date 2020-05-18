@@ -10,14 +10,14 @@ div {
     margin-top: 10px;
     margin-left: 400px;
 }
-span {
+ span {
     display: inline-block;
     width: 200px;
     text-align: right;
 
 }
 
-input {
+.div2 input {
     padding-top: 10px;
     padding-bottom: 10px;
 

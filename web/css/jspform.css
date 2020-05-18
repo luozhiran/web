@@ -1,0 +1,22 @@
+
+.div1 {
+    text-align: center;
+    color: #686666;
+}
+
+.div2 {
+    text-align: center;
+    background-color: #fff;
+    left: 50%;
+}
+
+span{
+    display: inline-block;
+    text-align: right;
+    width: 6em;
+}
+input{
+    margin-top: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
