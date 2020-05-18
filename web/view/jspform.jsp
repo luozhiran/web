@@ -20,6 +20,8 @@
 
 <div class="div2">
 
+
+
     <form action="../view/acceptform.jsp" method="post">
 
         <span>账号：</span><input type="text" name="account"/><br/>
