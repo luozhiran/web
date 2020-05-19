@@ -121,7 +121,7 @@ button:hover {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    flex-direction: row;
+    align-items: center;
     padding: 15px;
     background-repeat: no-repeat;
     background-size: cover;
@@ -321,7 +321,6 @@ button:hover {
     background: -o-linear-gradient(left, #005bea, #00c6fb);
     background: -moz-linear-gradient(left, #005bea, #00c6fb);
     background: linear-gradient(left, #005bea, #00c6fb);
-
     opacity: 0;
 }
 
