@@ -1,7 +1,7 @@
 package services.servlets;
 
 import com.alibaba.fastjson.JSON;
-import services.javabean.User;
+import services.javabean.Account;
 import services.utils.HeadUtils;
 
 import javax.servlet.ServletException;
@@ -11,7 +11,6 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.io.PrintWriter;
-import java.io.UnsupportedEncodingException;
 
 @WebServlet(name = "AndroidServlet",urlPatterns = {"/android"})
 public class AndroidServlet extends HttpServlet {
@@ -29,23 +28,22 @@ public class AndroidServlet extends HttpServlet {
         request.setCharacterEncoding("UTF-8");
         HeadUtils.printRequestHeaders(request);
         HeadUtils.printRequestParams(request);
-
         response.setContentType("application/json;charset=utf-8");
         response.setCharacterEncoding("UTF-8");
         PrintWriter printWriter = response.getWriter();
-        User user = buildUser();
+        Account user = buildUser();
         String userJson = JSON.toJSONString(user);
         printWriter.write(userJson);
         printWriter.flush();
         printWriter.close();
     }
 
-    private User buildUser() {
-        User user = new User();
-        user.setName("fastjson");
+    private Account buildUser() {
+        Account user = new Account();
+        user.setAccountName("fastjson");
         user.setPwd("pwd123456");
-        user.setAge(11);
-        user.setBirthDay("2020-9-13");
+        user.setId(11);
+        user.setCreateTime("2020-9-13");
         return user;
     }
 }
