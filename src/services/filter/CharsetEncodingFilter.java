@@ -1,10 +1,9 @@
 package services.filter;
 
 
-import services.utils.WebManager;
-
 import javax.servlet.*;
 import java.io.IOException;
+import java.nio.charset.StandardCharsets;
 
 public class CharsetEncodingFilter implements Filter {
     private String encoding;

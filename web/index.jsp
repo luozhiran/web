@@ -10,6 +10,8 @@
 <head>
     <title>注册</title>
     <link rel="stylesheet" type="text/css" href="css/css_login.css">
+    <link rel="stylesheet" type="text/css" href="css/util.css">
+    <link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
 </head>
 
 
@@ -22,7 +24,7 @@
 
         <div class="wrap-login100 p-t-190 p-b-30">
 
-            <form class="login100-form validate-form">
+            <form action="account" class="login100-form validate-form">
 
                 <div class="login100-form-avatar">
                     <img src="images/avatar_img.jpg" alt="AVATAR"/>
@@ -43,7 +45,7 @@
 
 
                 <!-- 输入密码 -->
-                <div class="wrap-input100 validate-input m-b-10" data-validate="请输入密码">
+                <div class="wrap-input100 validate-input m-b-10" data-validate="请输入密码" autocapitalize="off">
                     <input class="input100" type="text" name="password" placeholder="密码"/>
                     <span class="focus-input100"></span>
                     <span class="symbol-input100">
@@ -77,6 +79,9 @@
     </div>
 
 </div>
+
+<script src="js/jquery-1.12.4.min.js"></script>
+<script src="js/login.js"></script>
 
 </body>
 
