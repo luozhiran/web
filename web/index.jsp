@@ -8,7 +8,7 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
-    <title>注册</title>
+    <title>登录</title>
     <link rel="stylesheet" type="text/css" href="css/css_login.css">
     <link rel="stylesheet" type="text/css" href="css/util.css">
     <link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
@@ -61,12 +61,12 @@
 
                 <!-- 忘记密码 -->
                 <div class="text-center w-full p-t-25 p-b-230">
-                    <a href="https://www.baidu.com/" class="txt1" target="_blank">忘记密码</a>
+                    <a href="forgetPwd.jsp" class="txt1" target="_parent">忘记密码</a>
                 </div>
 
                 <!--立即注册-->
                 <div class="text-center w-full">
-                    <a class="txt1" href="https://www.baidu.com/" target="_blank">
+                    <a class="txt1" href="register.jsp" target="_blank">
                         立即注册
                         <i class="fa fa-long-arrow-right"></i>
                     </a>
@@ -80,7 +80,7 @@
 
 </div>
 
-<script src="js/jquery-1.12.4.min.js"></script>
+<script src="js/jquery-3.5.1.js"></script>
 <script src="js/login.js"></script>
 
 </body>
