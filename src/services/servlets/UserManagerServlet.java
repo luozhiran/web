@@ -33,6 +33,7 @@ public class UserManagerServlet extends HttpServlet {
         String pwd = request.getParameter("password");
         Account account = findDb(accountName);
         String type = request.getParameter("type");
+
         HeadUtils.printRequestParams(request);
         if ("login".equals(type)) {
             if (canLogin(account, accountName, pwd)) {
