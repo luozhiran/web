@@ -20,11 +20,12 @@
 <div class="dowebok limiter">
 
 
+
     <div class="container-login100" style="background-image: url('images/img-01.jpg');">
 
         <div class="wrap-login100 p-t-190 p-b-30">
 
-            <form action="account" class="login100-form validate-form">
+            <form action="account" class="login100-form validate-form" method="post">
 
                 <div class="login100-form-avatar">
                     <img src="images/avatar_img.jpg" alt="AVATAR"/>
@@ -56,7 +57,7 @@
 
                 <!-- 登录按钮 -->
                 <div class="container-login100-form-btn p-t-10">
-                    <button class="login100-form-btn">登录</button>
+                    <button class="login100-form-btn" name="type" value="login">登录</button>
                 </div>
 
                 <!-- 忘记密码 -->

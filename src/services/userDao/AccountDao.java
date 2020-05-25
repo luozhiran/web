@@ -30,8 +30,8 @@ public class AccountDao implements SqlAction<Account> {
             mPreparedStatement = mCoon.prepareStatement(sql);
             mPreparedStatement.setString(1, account.getAccountName());
             mPreparedStatement.setString(2, account.getPwd());
-            mPreparedStatement.setString(3, new SimpleDateFormat("yyyy-DD-mm HH:ss").format(new Date()));
-            if (mPreparedStatement.executeUpdate() > 1) {
+            mPreparedStatement.setString(3, new SimpleDateFormat("yyyy-MM-dd HH:mm").format(new Date()));
+            if (mPreparedStatement.executeUpdate() > 0) {
                 flag = true;
             }
         } catch (SQLException throwables) {
